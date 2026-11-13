@@ -184,7 +184,7 @@ function App() {
             </button>
 
             <p className="coming-soon">
-              Powered by Dog CEO API
+             Every pup has a story. 🐾
             </p>
           </div>
         </div>

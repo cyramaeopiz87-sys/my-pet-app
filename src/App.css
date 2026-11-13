@@ -191,3 +191,68 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* ===== BREED SELECTOR & FETCH BUTTON ===== */
+
+.breed-section {
+  margin-top: 23px;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.breed-section label {
+  color: #594943;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.breed-section select {
+  width: 100%;
+  min-height: 49px;
+  padding: 0 15px;
+  border: 1px solid #eadbd4;
+  border-radius: 12px;
+  outline: none;
+  background: #fffaf7;
+  color: #57443e;
+  font-size: 14px;
+  cursor: pointer;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.breed-section select:focus {
+  border-color: #d98b72;
+  box-shadow: 0 0 0 3px rgba(217, 139, 114, 0.15);
+}
+
+.fetch-button {
+  width: 100%;
+  min-height: 50px;
+  border: none;
+  border-radius: 13px;
+  background: #d98b72;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 7px 16px rgba(217, 139, 114, 0.2);
+}
+
+.fetch-button:hover:not(:disabled) {
+  background: #c97960;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(217, 139, 114, 0.25);
+}
+
+.fetch-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+.coming-soon {
+  margin-top: 4px;
+  color: #a79790;
+  font-size: 11px;
+  text-align: center;
+}
