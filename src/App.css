@@ -256,3 +256,90 @@
   font-size: 11px;
   text-align: center;
 }
+
+/* ===== LAYOUT SIZE IMPROVEMENTS ===== */
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-section {
+  width: 100%;
+  max-width: 1400px;
+  flex: 1;
+  margin: 0 auto;
+  padding: 65px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(50px, 8vw, 110px);
+}
+
+.hero-text {
+  flex: 1;
+  max-width: 550px;
+}
+
+.hero-text h1 {
+  font-size: clamp(48px, 5.5vw, 68px);
+}
+
+.hero-text p {
+  font-size: 17px;
+  line-height: 1.9;
+}
+
+.pet-card {
+  flex: 1;
+  width: 100%;
+  max-width: 520px;
+  padding: 28px;
+}
+
+.image-container {
+  height: 320px;
+  min-height: 320px;
+}
+
+/* ===== FOOTER DESIGN ===== */
+
+footer {
+  width: 100%;
+  padding: 23px 20px;
+  margin-top: auto;
+  text-align: center;
+  color: #967d83;
+  font-size: 13px;
+  background: rgba(255, 255, 255, 0.45);
+  border-top: 1px solid rgba(255, 255, 255, 0.6);
+  letter-spacing: 0.3px;
+}
+
+/* ===== SUBTLE INTERACTION EFFECTS ===== */
+
+.pet-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pet-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 22px 50px rgba(91, 57, 43, 0.13);
+}
+
+.dog-image {
+  transition: transform 0.4s ease;
+}
+
+.image-container:hover .dog-image {
+  transform: scale(1.035);
+}
+
+.brand-icon {
+  transition: transform 0.3s ease;
+}
+
+.brand:hover .brand-icon {
+  transform: rotate(-8deg) scale(1.08);
+}
